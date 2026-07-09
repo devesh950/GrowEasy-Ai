@@ -1,6 +1,7 @@
 # GrowEasy CSV Importer
 
 AI-powered CSV importer for GrowEasy CRM. The frontend lets users upload a CSV, preview it locally, and confirm the import. The backend parses the uploaded file, extracts CRM fields in batches, and returns structured JSON records.
+DEMO URL:-https://groweasyai.streamlit.app
 
 ## Stack
 
