@@ -1,0 +1,6 @@
+full_name,contact_email,phone_number,company_name,city_name,state_name,country_name,lead_owner,lead_status,source,appointment_time,remarks,extra_email,extra_phone
+John Doe,john.doe@example.com,+919876543210,GrowEasy,Mumbai,Maharashtra,India,test@gmail.com,Interested,Facebook Lead Ads,2026-05-13 14:20:48,Client asked to reschedule demo,john.alt@example.com,+919812345678
+Sarah Johnson,sarah.johnson@example.com,+919876543211,Tech Solutions,Bangalore,Karnataka,India,test@gmail.com,Busy,Google Ads,2026-05-13 14:25:30,"Person was busy, will try again next week",,
+Rajesh Patel,rajesh.patel@example.com,+919876543212,Startup Inc,Delhi,Delhi,India,test@gmail.com,Not Interested,Excel Sheet,2026-05-13 14:30:15,Not interested in our services,,
+Priya Singh,priya.singh@example.com,+919876543213,Enterprise Corp,Pune,Maharashtra,India,test@gmail.com,Closed Won,CRM Export,2026-05-13 14:35:22,"Deal closed, onboarding in progress",,
+No Contact,,,,,,,test@gmail.com,Unknown,Manual Sheet,,,,

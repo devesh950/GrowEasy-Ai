@@ -1,0 +1,15 @@
+node_modules
+.next
+dist
+.env
+.env.local
+.DS_Store
+coverage
+npm-debug.log*
+.venv
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints
+*.log
