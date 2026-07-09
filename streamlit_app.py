@@ -229,7 +229,7 @@ CRM_COLUMNS = [
 
 # Field matches
 FIELD_MAPPINGS = {
-    "created_at": ["date", "created", "created_at", "timestamp", "date_created"],
+    "created_at": ["date", "created", "created_at", "timestamp", "date_created", "appointment_time", "time"],
     "name": ["name", "full_name", "customer_name", "contact_name"],
     "email": ["email", "contact_email", "email_address"],
     "country_code": ["country_code", "country_prefix", "phone_prefix"],
@@ -241,8 +241,8 @@ FIELD_MAPPINGS = {
     "lead_owner": ["lead_owner", "owner", "assigned_to", "representative"],
     "crm_status": ["status", "lead_status", "crm_status", "stage"],
     "crm_note": ["note", "notes", "crm_note", "remarks", "comment"],
-    "data_source": ["source", "data_source", "origin", "channel"],
-    "possession_time": ["possession_time", "follow_up", "next_action"],
+    "data_source": ["source", "data_source", "data source", "origin", "channel"],
+    "possession_time": ["possession_time", "possession", "possession time", "follow_up", "next_action", "follow up"],
     "description": ["description", "desc", "details", "extra_notes"]
 }
 
@@ -408,7 +408,8 @@ if st.session_state.step == 1:
     
     if uploaded_file:
         try:
-            df = pd.read_csv(uploaded_file)
+            # Fix float conversion issue by reading everything as strings (dtype=str)
+            df = pd.read_csv(uploaded_file, dtype=str)
             st.session_state.uploaded_file = uploaded_file
             st.session_state.df = df
             st.session_state.step = 2
